@@ -1,0 +1,65 @@
+{
+    "title": "Gitbook 配置教程",
+    "description": "",
+    "author": "crazybuglzy",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "links": {
+        "sidebar": {
+            "Home": "http://www.baidu.com"
+        }
+    },
+    "plugins": [
+        "-lunr",
+        "-highlight",
+        "-livereload",
+        "-search",
+        "-sharing",
+        "search-pro",
+        "splitter",
+        "expandable-chapters-small",
+        "prism@^2.1.0",
+        "prism-themes@^0.0.2",
+        "anchors",
+        "copy-code-button",
+        "anchor-navigation-ex",
+        "tbfed-pagefooter",
+        "sectionx",
+        "sitemap-general",
+        "alerts",
+        "multipart"
+    ],
+
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
+        },
+         "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy crazybuglzy.com 2018",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "sitemap-general": {
+            "prefix": "http://gitbook.zhangjikai.com"
+        },
+        "disqus": {
+            "shortName": "gitbookuse"
+        }
+    }
+}
